@@ -1,45 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login Portal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
 
-<style>
-*{
-    margin: 5px;
-    padding: 8px;
-    box-sizing: border-box;
-    font-family: Arial, sans-serifg
-}
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
 
-body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
-}
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+        }
 
-.login-box{
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
-    width:320px;
-    text-align:center;
-}
+        .login-box{
+            width:350px;
+            background:#fff;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
 
-.login-box h2{
-    margin-bottom:20px;
-}
+        .login-box h2{
+            text-align:center;
+            margin-bottom:20px;
+        }
 
-input{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:8px;
-    outline:1px solid #4facfe;
-}
+        .input-box{
+            margin-bottom:15px;
+        }
 
+        .input-box label{
+            display:block;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        .input-box input{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            outline:none;
+        }
+
+        .input-box input:focus{
+            border-color:#4facfe;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:#4facfe;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#2196f3;
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:15px;
+        }
+
+        .footer a{
+            text-decoration:none;
+            color:#2196f3;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h2>Login</h2>
+
+    <form action="#" method="post">
+
+        <div class="input-box">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter Username" required>
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter Password" required>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <div class="footer">
+            <p>Don't have an account?
+                <a href="#">Register</a>
+            </p>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
